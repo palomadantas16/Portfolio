@@ -1,12 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Paloma Dantas</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="./src/css/style.css">
+<title>Paloma Dantas</title>
 </head>
 <body>
-    <script src="./src/js/script.js"></script>
+ 
+<nav>
+  <a href="#" class="logo">Paloma Dantas</a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#formacao">Formação</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+ 
+<!-- HERO -->
+<div id="hero">
+  <div class="hero-l">
+    <p class="eyebrow">Desenvolvedora &amp; estudante </p>
+    <h1>O futuro é construído<span>por quem tem coragem de inovar.</span></h1>
+    <p class="hero-desc">Transformando aprendizado em projetos e ideias em experiências digitais.</p>
+    <div class="hero-btns">
+      <a href="#projetos" class="btn btn-solid">Ver projetos</a>
+      <a href="#contato" class="btn btn-ring">Falar comigo</a>
+    </div>
+  </div>
+  <div class="hero-r">
+    <div class="hero-r-blob"></div>
+    <div class="hero-r-blob2"></div>
+    <div class="hero-cards">
+      <div class="hcard">
+        <div class="hcard-icon blush">✦</div>
+        <div>
+          <div class="hcard-title">1 semestre</div>
+          <div class="hcard-sub">Software engineering</div>
+        </div>
+      </div>
+      <div class="hcard">
+        <div class="hcard-icon lilac">◈</div>
+        <div>
+          <div class="hcard-title">Linguagens</div>
+          <div class="hcard-sub">HTML • CSS • JS • PYTHON</div>
+        </div>
+      </div>
+      <div class="hcard">
+        <div class="hcard-icon mint">●</div>
+        <div>
+          <div class="hcard-title">Disponível</div>
+          <div class="hcard-sub">para novas propostas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- SOBRE -->
+<section class="sec" id="sobre">
+  <div class="container">
+    <div class="reveal">
+      <p class="sec-tag">Sobre mim</p>
+      <h2>Quem está <i>por trás</i><br>do teclado</h2>
+    </div>
+    <div class="sobre-layout">
+      <div class="sobre-text reveal">
+        <p>Sou estudante de Engenharia de Software e formada em Informática para Internet, apaixonada por tecnologia e por transformar ideias em projetos reais.</p>
+        <p>Gosto de aprender novas tecnologias e enfrentar desafios que me façam evoluir como desenvolvedora. </p>
+        <p>Atualmente, venho desenvolvendo projetos acadêmicos e pessoais para fortalecer minhas habilidades técnicas e construir cada vez mais experiência na área tech, buscando também uma oportunidade de estágio para ganhar ainda mais experiência, evoluir na área tech e continuar construindo projetos incríveis.</p>
+      </div>
+      <div class="sobre-foto reveal">
+        <div class="foto-circle">
+          <img src="./src/assets/img/minhaFoto.jpeg" alt="Foto de Paloma Dantas" />
+        </div>
+        <div class="foto-badge">✦ Engenheira de Software em formação</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FORMAÇÃO -->
+<section class="sec" id="formacao">
+  <div class="container">
+    <div class="reveal">
+      <p class="sec-tag">Trajetória</p>
+      <h2>Formação <i>Acadêmica</i></h2>
+    </div>
+    <div class="formacao-list">
+ 
+      <div class="formacao-item reveal">
+        <div class="formacao-foto">
+          <!-- Substitua pelo logo da instituição ou sua foto -->
+          <img src="./src/assets/img/logoFaculdade.jfif" alt="Engenharia de Software" />
+        </div>
+        <div class="formacao-info">
+          <span class="formacao-badge">Em andamento</span>
+          <h3>Engenharia de Software</h3>
+          <p class="formacao-inst">FIAP &mdash; (2026 &ndash; 2029) &ndash; Cursando</p>
+          <p class="formacao-desc">Curso superior com foco em desenvolvimento de sistemas, arquitetura de software, banco de dados, metodologias ágeis e boas práticas de engenharia aplicada a projetos reais.</p>
+        </div>
+      </div>
+ 
+      <div class="formacao-item reveal" style="transition-delay:.1s">
+        <div class="formacao-foto">
+          <img src="./src/assets/img/logoTecnico.jfif" alt="Informática para Internet" />
+        </div>
+        <div class="formacao-info">
+          <span class="formacao-badge concluido">Concluído</span>
+          <h3>Informática para Internet</h3>
+          <p class="formacao-inst"> Etec de Campo Limpo Paulista &mdash; (2023 &ndash; 2025)
+          </p>
+          <p class="formacao-desc">Curso técnico com ênfase em desenvolvimento web, lógica de programação, HTML, CSS, JavaScript e introdução ao desenvolvimento back-end.</p>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- PROJETOS -->
+<section class="sec" id="projetos">
+  <div class="container">
+    <div class="reveal">
+      <p class="sec-tag">Projetos</p>
+      <h2>Conheça alguns dos meus<br><i>projetos</i></h2>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card reveal">
+        <div class="proj-num">01</div>
+        <h3>FINANTEC</h3>
+        <p>Plataforma para auxiliar no planejamento pessoal e educação financeira dos jovens</p>
+        <div class="proj-tags">
+          <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">NODE</span>
+        </div>
+      </div>
+      <div class="proj-card reveal" style="transition-delay:.08s">
+        <div class="proj-num">02</div>
+        <h3>JOVICLASS</h3>
+        <p>Plataforma integrada a câmera do celular que integra o registro de conteúdo de aula e organização geral de estudos com o foco em estudantes full-time.</p>
+        <div class="proj-tags">
+          <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JS</span>
+        </div>
+      </div>
+      <div class="proj-card reveal" style="transition-delay:.16s">
+        <div class="proj-num">03</div>
+        <h3>VINHARIA AGNELLO</h3>
+        <p>Loja virtual de vinhos e plataforma informativa para assistência de sua escolha.</p>
+        <div class="proj-tags">
+          <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JS</span>
+        </div>
+      </div>
+      <div class="proj-card reveal" style="transition-delay:.24s">
+        <div class="proj-num">04</div>
+        <h3>SVR</h3>
+        <p>Plataforma de gerenciamento de prestadores de serviço a seguradoras.</p>
+        <div class="proj-tags">
+          <span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTATO -->
+<section class="sec" id="contato">
+  <div class="container">
+    <div class="contato-layout">
+      <div class="contato-left">
+        <p class="sec-tag reveal">Contato</p>
+        <h2 class="reveal">Gostaria de formar<br><i>um time juntos?</i></h2>
+        <p class="reveal">Me manda uma mensagem — retorno em até 24h!</p>
+      </div>
+      <div class="contato-right reveal">
+        <a href="mailto:paloma.carmo@yahoo.com" class="btn btn-blush">paloma.carmo@yahoo.com</a>
+        <a href="https://www.linkedin.com/in/paloma-dantas-6b3a61260" class="btn btn-ghost">Linkedin</a>
+        <a href="https://github.com/palomadantas16" class="btn btn-ghost">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <a href="#" class="logo" style="font-family:'Playfair Display',serif;font-style:italic;">Paloma Dantas</a>
+  <span>feito com ♡ </span>
+  <span>© 2026</span>
+</footer>
+ 
+<script src="./src/js/script.js"></script>
 </body>
 </html>
