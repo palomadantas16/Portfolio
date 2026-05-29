@@ -176,7 +176,9 @@ h2 i{font-style:italic;color:var(--blush);}
 /* ── FORMAÇÃO ── */
 #formacao{background:var(--warm);}
 .formacao-list{
-  display:flex;flex-direction:column;gap:2.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:2.5rem;
   margin-top:1rem;
 }
 .formacao-item{
@@ -203,33 +205,52 @@ h2 i{font-style:italic;color:var(--blush);}
   flex-shrink:0;
 }
 .formacao-foto img{
-  width:100%;height:100%;
-  object-fit:cover;display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 .formacao-info{
-  display:flex;flex-direction:column;gap:.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
 }
 .formacao-badge{
-  font-size:.65rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--blush);background:#ffe4ea;
-  border-radius:999px;padding:.3rem .9rem;
-  display:inline-block;width:fit-content;
+  font-size:.65rem;
+  font-weight:600;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--blush);
+  background:#ffe4ea;
+  border-radius:999px;
+  padding:.3rem .9rem;
+  display:inline-block;
+  width:fit-content;
   margin-bottom:.25rem;
 }
 .formacao-badge.concluido{
   color:#059669;background:#d1fae5;
 }
 .formacao-info h3{
-  font-family:var(--serif);font-weight:700;font-size:1.4rem;
-  letter-spacing:-.5px;margin:0;
+  font-family:var(--serif);
+  font-weight:700;
+  font-size:1.4rem;
+  letter-spacing:-.5px;
+  margin:0;
 }
 .formacao-inst{
-  font-size:.8rem;font-weight:500;letter-spacing:.05em;
+  font-size:.8rem;
+  font-weight:500;
+  letter-spacing:.05em;
   color:var(--muted);
 }
 .formacao-desc{
-  font-size:.9rem;color:var(--muted);line-height:1.8;font-weight:300;
-  max-width:600px;margin-top:.25rem;
+  font-size:.9rem;
+  color:var(--muted);
+  line-height:1.8;
+  font-weight:300;
+  max-width:600px;
+  margin-top:.25rem;
 }
 
 /* ── PROJETOS ── */
@@ -266,6 +287,109 @@ h2 i{font-style:italic;color:var(--blush);}
   transition:background .2s;
 }
 .proj-card:hover .badge{background:#fff;}
+
+/* ── CURRÍCULO ── */
+.curriculo-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.curriculo-left {
+  max-width: 480px;
+}
+.curriculo-desc {
+  font-size: .97rem;
+  color: var(--muted);
+  line-height: 1.9;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.curriculo-meta {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.curriculo-chip {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--blush);
+  background: #ffe4ea;
+  border-radius: 999px;
+  padding: .4rem 1.2rem;
+}
+.curriculo-right {
+  flex-shrink: 0;
+}
+.curriculo-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+  transition: box-shadow .25s, transform .25s;
+}
+.curriculo-card:hover {
+  box-shadow: 0 8px 40px rgba(251,106,133,.1);
+  transform: translateY(-2px);
+}
+.curriculo-card-top {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.curriculo-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #f3e8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+.curriculo-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: var(--serif);
+}
+.curriculo-card-sub {
+  font-size: .78rem;
+  color: var(--muted);
+  font-weight: 300;
+  margin-top: 2px;
+}
+.curriculo-divider {
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 1.25rem;
+}
+.curriculo-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1.75rem;
+}
+.curriculo-btn {
+  width: 100%;
+  text-align: center;
+  background: var(--ink);
+  color: #fff;
+}
+.curriculo-btn:hover {
+  background: var(--blush);
+  border-color: var(--blush);
+}
+
+@media(max-width:860px) {
+  .curriculo-layout { flex-direction: column; }
+  .curriculo-card { min-width: unset; width: 100%; }
+}
 
 /* ── CONTATO ── */
 #contato{background:var(--ink);border-bottom:none;}
